@@ -38,7 +38,7 @@ Schema::create('course_student', function (Blueprint $table))(
 
     $table->increment('id');
 
-    $table->unsignedInteger('student_id'); 
+    $table->unsignedInteger('student_id');
     $table->foreign('student_id')->references('id')->on('students');
 
     $table->unsignedInteger('course_id');
